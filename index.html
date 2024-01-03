@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Pulak Das</div>
+        <div>
+            <ul class="nav-links">
+            <li><a href="#about" >About</a></li>
+            <li><a href="#experience" >Experience</a></li>
+            <li><a href="#projects" >Projects</a></li>
+            <li><a href="#contact" >Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+       
+        <nav id="hamburger-nav">
+            <div class="logo">Pulak Das</div>
+            <div class="menu">
+            <div class="icon" onclick="toggleMenu()">
+             <span></span>
+             <span></span>
+             <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="Profile">
+        <div class="pic-container">
+            <img src="pro3.png"  alt="Profile pic">
+        
+        </div>
+        <div class="section">
+            <p class="section_text">Hello, I'm</p>
+            <h1 class="text_1">Pulak Das</h1>
+            <p class="text_2">Backend Developer</p>
+        <div class="btn_container">
+            <button class="btn_color_1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>  
+        <div id ="socials-container">
+            <img src="linkedin.png"
+             alt="linkedin"class = "icon" onclick ="location.href='https://linkedin.com/'">
+            <img src="github.png"
+             alt="github" class="icon" onclick ="location.href='https://github.com/'">
+          
+        </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about_me">
+            <h1>ABOUT ME</h1>
+        </div>
+    </section>
+    <section id ="experience">
+        <div class="experience">
+            <h1>Experiences</h1>
+        </div>
+    </section>
+    <section id = "projects">
+        <div class="projects">
+            <h1>Projects</h1>
+        </div>
+    </section>
+    <section id ="contact">
+        <div class="contact">
+            <h1>Contact</h1>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
